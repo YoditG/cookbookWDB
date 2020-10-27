@@ -2,16 +2,18 @@ import React, { useState, useEffect } from "react"
 import client from "./client"
 import "./App.css"
 
+
 function About(props){  
     
     const [ about, setAbout ] = useState(null)
 
     useEffect(() => {
-        client.getEntries({
-            content_type: "subtitle"
-        })
-        .then((response) => {setAbout(response.items[0])})
-        .catch(console.error)
+        // client.getEntries({
+        //     content_type: "subtitle"
+        // })
+        // .then((response) => {setAbout(response.items[0])})
+        // .catch(console.error)
+        fetch('http://localhost:3000/').then(res=>res.json()).then(data=>console.log(data));
     },[])
 
     console.log(about)

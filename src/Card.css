@@ -44,21 +44,21 @@
 .cardTitel {
     font-family: 'Sansita Swashed', cursive;
     color: orangered;
-    opacity: 90%;
+    /*opacity: 90%;*/
     font-size: 0.8em;
 } 
 
 h3 {
     font-family: 'Sansita Swashed', cursive;
     color: orangered;
-    opacity: 90%;
+    /*opacity: 90%;*/
 }
 
 
 .cardTitleBig {
     font-family: 'Sansita Swashed', cursive;
     color: orangered;
-    opacity: 90%;
+    /*opacity: 90%;*/
     text-decoration: none;
     font-size: 1.2em;  
 }

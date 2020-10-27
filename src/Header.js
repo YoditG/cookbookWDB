@@ -21,7 +21,6 @@ function Header(){
     return (
         <Router>
         <div className="header">
-            
             <h2 className="logoText">Remy's Kitchen</h2>
             <nav className="navigation">
                 {header && header.fields.navigationItems.map((navItem, index) => {
@@ -29,10 +28,8 @@ function Header(){
                         <NavLink className="navigationItem" key={index} to={`/${navItem}`} activeStyle={{ color: "white"}}>{navItem}</NavLink> 
                     )    
                 })}
-              
             </nav>
-            
-            </div>
+        </div>
         </Router>
         );
     }
